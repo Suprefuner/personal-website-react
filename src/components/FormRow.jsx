@@ -8,7 +8,7 @@ export default function FormRow({
 }) {
   return (
     <div className="flex flex-col font-[500] capitalize">
-      <label for={name} className="mb-0.5 ml-1.5">
+      <label htmlFor={name} className="mb-0.5 ml-1.5">
         {labelText || name}
       </label>
       {type === "textarea" ? (
@@ -19,7 +19,7 @@ export default function FormRow({
           rows="10"
           require={require}
           placeholder=" "
-          className="px-1.5 py-1 resize-none rounded-xl bg-white/50 outline-offset-1 outline-2 outline-sky-400"
+          className="px-1.5 py-1 resize-none rounded-xl bg-white/50 outline-offset-1 outline-2 outline-sky-400 shadow-inner shadow-sky-300/50"
           value={values.message}
           onChange={handleChange}
         />
@@ -30,7 +30,7 @@ export default function FormRow({
           name={name}
           placeholder=" "
           require={require}
-          className="px-1.5 py-1 rounded-xl bg-white/50 outline-offset-1 outline-2 outline-sky-400"
+          className="px-1.5 py-1 rounded-xl bg-white/50 outline-offset-1 outline-2 outline-sky-400 w-full shadow-inner shadow-sky-300/50"
           value={values[name]}
           onChange={handleChange}
         />

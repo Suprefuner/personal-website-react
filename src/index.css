@@ -4,6 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-hero: #ffe9c7;
+  --color-hero-light-1: #ffefd6;
+  --color-hero-dark-1: #fde3ba;
+
+  --color-about: #ffd2d6;
+  --color-about-light-1: #ffd8d8;
+  --color-about-dark-1: #ffc9c9;
+  --color-about-dark-2: #ffb7b7;
+
+  --color-work: #b6fdc0;
+  --color-work-light-1: #ccffd3;
+  --color-work-dark-1: #95fda3;
+
+  --color-connect: #b5e9ff;
+  --color-connect-light-1: #c6ecfc;
+  --color-connect-dark-1: #a3e3ff;
+  --color-connect-dark-2: #95defd;
+
+  --color-cloud: rgb(255, 255, 255, 1);
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -15,4 +37,106 @@ body {
 
 * {
   font-family: "Poppins", sans-serif;
+}
+
+.heroBG {
+  background: radial-gradient(
+    circle,
+    var(--color-hero-light-1) 30%,
+    var(--color-hero) 30% 60%,
+    var(--color-hero-dark-1) 60%
+  );
+}
+
+.aboutBG {
+  background-image: radial-gradient(
+      circle at bottom right,
+      var(--color-about-dark-2) 10%,
+      var(--color-about-dark-1) 10% 20%,
+      var(--color-about) 20% 30%,
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at top left,
+      var(--color-about-dark-2) 10%,
+      var(--color-about-dark-1) 10% 30%,
+      var(--color-about) 30% 50%,
+      var(--color-about-light-1) 50%
+    );
+}
+
+.workBG {
+  background-image: linear-gradient(
+      -80deg,
+      var(--color-work-dark-1) 15%,
+      var(--color-work) 15% 30%,
+      var(--color-work-light-1) 30%,
+      50%,
+      transparent 50%
+    ),
+    linear-gradient(
+      20deg,
+      var(--color-work-dark-1) 10%,
+      var(--color-work) 10% 30%,
+      var(--color-work-light-1) 30% 50%,
+      var(--color-work-dark-1) 50%
+    );
+}
+
+.connectBG {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-connect-light-1) 50%,
+    var(--color-connect) 50% 75%,
+    var(--color-connect-dark-1) 75% 90%,
+    var(--color-connect-dark-2) 90%
+  );
+}
+.cloud-nav {
+  background-color: var(--color-cloud);
+  filter: drop-shadow(0 5px 5px rgb(0 0 0 / 0.05));
+}
+
+.cloud-nav:after {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  bottom: 3rem;
+  z-index: -1;
+  width: 10rem;
+  aspect-ratio: 1;
+  background-color: var(--color-cloud);
+  border-radius: 100%;
+  transform: translateY(50%);
+  /* prettier-ignore */
+  box-shadow: 
+    7rem 1rem 0 -1rem var(--color-cloud), 
+    12rem 3rem 0 -2rem var(--color-cloud), 
+    18rem 1rem 0 var(--color-cloud),
+    27rem -0.4rem 0 1rem var(--color-cloud), 
+    35rem -0.8rem 0 -0.5rem var(--color-cloud),
+    42rem 1rem 0 -1rem var(--color-cloud), 
+    47rem 3rem 0 -2rem var(--color-cloud), 
+    53rem 1rem 0 var(--color-cloud),
+    62rem -0.4rem 0 1rem var(--color-cloud), 
+    69rem -0.8rem 0 -0.5rem var(--color-cloud), 
+    75rem 1rem 0 -1rem var(--color-cloud), 
+    81rem 3rem 0 -2rem var(--color-cloud), 
+    87rem 1rem 0 var(--color-cloud),
+    95rem -0.4rem 0 1rem var(--color-cloud), 
+    103rem -0.8rem 0 -0.5rem var(--color-cloud), 
+    108rem 1rem 0 -1rem var(--color-cloud), 
+    114rem 3rem 0 -2rem var(--color-cloud), 
+    120rem 1rem 0 var(--color-cloud),
+    129rem -0.4rem 0 1rem var(--color-cloud), 
+    136rem -0.8rem 0 -0.5rem var(--color-cloud),
+    141rem 1rem 0 -1rem var(--color-cloud), 
+    146rem 3rem 0 -2rem var(--color-cloud), 
+    153rem 1rem 0 var(--color-cloud),
+    160rem -0.4rem 0 1rem var(--color-cloud), 
+    168rem -0.8rem 0 -0.5rem var(--color-cloud),
+    172rem 1rem 0 -1rem var(--color-cloud), 
+    176rem 3rem 0 -2rem var(--color-cloud), 
+    182rem 1rem 0 var(--color-cloud),
+    190rem -0.4rem 0 1rem var(--color-cloud)
 }

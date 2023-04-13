@@ -50,18 +50,13 @@ export default {
     },
     extend: {
       colors: {
+        header: "#f84874",
         // primary: "#ff9900",
-        // primarylight: "#f9b050",
-        // primarydark: "#e58200",
-        // secondary: "#131921",
-        // trinary: "#232f3e",
-        // trinarylight: "#97c6f2",
-        current: "currentColor",
       },
       screens: {
         xs: "450px",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 }

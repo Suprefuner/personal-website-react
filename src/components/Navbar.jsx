@@ -1,13 +1,27 @@
-import logo from "../assets/jc-icon.svg"
+import { forwardRef } from "react"
+import { Cloud, CloudMenu, NavbarList } from "./index"
+import logo from "../assets/images/jc-icon.svg"
+import { useSnapshot } from "valtio"
+import state from "../store"
 
-export default function Navbar() {
+const Navbar = forwardRef((_, ref) => {
+  const snap = useSnapshot(state)
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-30 flex items-center justify-between bg-white/50 h-7 backdrop-blur">
-      <div className="container">
+    <nav className="fixed left-0 right-0 z-50 md:-top-10 lg:top-0" ref={ref}>
+      {snap.screenSize <= 1 ? <CloudMenu /> : <Cloud />}
+      <div className="container absolute top-2 md:top-[11.5rem] lg:top-1 left-0 right-0 flex items-center justify-between ">
         <div>
-          <img src={logo} alt="logo" className="w-5" />
+          <a href="#home">
+            <img src={logo} alt="logo" className="w-5" />
+          </a>
         </div>
+        {snap.screenSize < 2 ? null : <NavbarList />}
+        {/* FOR LAYOUT PURPOSE ONLY */}
+        {snap.screenSize > 3 && <div />}
       </div>
     </nav>
   )
-}
+})
+
+export default Navbar
