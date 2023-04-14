@@ -19,10 +19,6 @@ export default function Form() {
     setValues((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleMouseUpAnimation = () => {
-    customKeyboardEvent("keyup", "Insert")
-  }
-
   const handleSubmit = async (e) => {
     e.preventDefault()
 
@@ -35,15 +31,22 @@ export default function Form() {
     // FIXME EMAIL FUNCTION
     setIsSendingEmail(true)
     try {
+      // FIXME CHANGE WHEN DEPLOY
       await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        values,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        process.env.VITE_EMAILJS_SERVICE_ID,
+        process.env.VITE_EMAILJS_TEMPLATE_ID,
+        process.env.VITE_EMAILJS_PUBLIC_KEY
       )
 
+      // await emailjs.send(
+      //   import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      //   import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      //   values,
+      //   import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      // )
+
       // FIRE SPLINE ANIMATION
-      handleMouseUpAnimation()
+      customKeyboardEvent("keyup", "Insert")
       toast.success(`GREAT! Email sent will get back to you ASAP`)
     } catch (error) {
       toast.error(`Something went wrong, please try again`)
