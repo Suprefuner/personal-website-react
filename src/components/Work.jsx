@@ -51,7 +51,7 @@ export default function Work() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ type: "tween", duration: 0.75 }}
                 viewport={{ margin: "-200px", once: true }}
-                className="font-extrabold leading-[9rem] text-[9rem] text-[#f84874] mb-3 "
+                className="font-extrabold leading-[9rem] text-[9rem] text-[#f84874] mb-3 relative"
               >
                 Recent Works
               </motion.h2>

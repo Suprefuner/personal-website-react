@@ -36,7 +36,7 @@ export default function WorkItem({ i, work, selectedWork, setSelectedWork }) {
         lg:w-full xl:w-3/4 w-4/5 
         px-5 py-1.5 rounded-3xl 
         text-3xl lg:text-xl capitalize truncate 
-        shadow-md shadow-green-300/50 hover:shadow-green-300/30
+        shadow-md shadow-gray-500/20 hover:shadow-gray-400/10
         hover:shadow-xl transition-shadow 
         hover:cursor-pointer 
       ${

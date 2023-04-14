@@ -19,13 +19,13 @@ function App() {
       {snap.screenSize <= 3 ? (
         <Navbar />
       ) : (
-        <AnimatePresence>
+        <AnimatePresence initial={false}>
           {snap.showNavBar ? (
             <MotionNavbar
               key="navbar"
               initial={{ y: -150 }}
               animate={{ y: 0 }}
-              exit={{ y: -150 }}
+              exit={{ y: -150, transition: { type: "tween", duration: 0.2 } }}
             />
           ) : null}
         </AnimatePresence>

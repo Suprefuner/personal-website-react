@@ -59,7 +59,7 @@ const AboutText = () => {
                 type: "spring",
                 stiffness: 100,
               }}
-              className={`text-5xl absolute -bottom-5  -left-[10vw] sm:-left-[5vw] w-min inline-block`}
+              className={`text-5xl absolute -bottom-5 -left-[10vw] sm:-left-[5vw] w-min inline-block`}
             >
               ✨
             </motion.div>

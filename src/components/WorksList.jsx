@@ -9,7 +9,7 @@ export default function WorksList({ works, selectedWork, setSelectedWork }) {
       initial="closed"
       whileInView="open"
       viewport={{ margin: "-400px", once: true }}
-      className="space-y-1 w-[45vw] h-[450px] py-2 px-5 lg:px-3"
+      className="space-y-1 max-w-[70rem] w-[40vw] h-[450px] py-2 px-5 lg:px-3 relative z-30 "
     >
       {works.map((work, i) => (
         <WorkItem

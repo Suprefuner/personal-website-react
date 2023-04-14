@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, Suspense } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { useSnapshot } from "valtio"
@@ -41,10 +41,7 @@ export default function About() {
             className="absolute bottom-0 order-1 w-full rounded-full h-1/3"
             onClick={() => setShowStackMenu((prev) => !prev)}
           >
-            <motion.div
-              className="w-full h-full mx-auto rounded-full pointer-events-none"
-              onClick={() => setShowStackMenu((prev) => !prev)}
-            >
+            <motion.div className="w-full h-full mx-auto rounded-full pointer-events-none">
               {loadSpline(
                 "https://prod.spline.design/eJuD4AKX3ZkUCk4h/scene.splinecode"
               )}

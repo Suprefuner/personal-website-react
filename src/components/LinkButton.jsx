@@ -10,6 +10,7 @@ const LinkButton = ({ selectedWork }) => {
     <>
       <a
         href={selectedWork.url}
+        target="_blank"
         className="right-0 p-1 text-xl text-center text-white rounded-full bg-green-500/90"
         onMouseOver={() => setShowMsg(true)}
         onMouseLeave={() => setShowMsg(false)}
