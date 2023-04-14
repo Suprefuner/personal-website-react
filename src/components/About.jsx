@@ -35,7 +35,7 @@ export default function About() {
         </AnimatePresence>
 
         {/* FETCH DIFFERENT SPLINE FOR DIFFERENT SCREEN SIZES */}
-        {snap.screenSize < 3 ? (
+        {snap.screenSize <= 3 ? (
           // NEED TO ADD ONE MORE DIV TO TRIGGER CLICK EVENT
           <div
             className="absolute bottom-0 order-1 w-full rounded-full h-1/3"

@@ -16,7 +16,7 @@ function App() {
       RWD: ONLY ANIMATE NAVBAR ABOVE 1280
       ==============================================================
       */}
-      {snap.screenSize < 3 ? (
+      {snap.screenSize <= 3 ? (
         <Navbar />
       ) : (
         <AnimatePresence>

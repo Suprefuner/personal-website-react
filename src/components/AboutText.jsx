@@ -45,7 +45,7 @@ const AboutText = () => {
         I'm currently on my way to become a web development master.
         <br />
         Come and Join my party!!!
-        {snap.screenSize < 3 && (
+        {snap.screenSize <= 3 && (
           <>
             <motion.div
               initial={{ rotate: "-12deg" }}

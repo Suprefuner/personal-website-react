@@ -14,6 +14,8 @@ export default function Hero() {
   const snap = useSnapshot(state)
   const { bgColor, splineURL } = sectionData.hero
 
+  console.log(snap.screenSize)
+
   const aboutRef = useRef()
   const workRef = useRef()
   const connectRef = useRef()
@@ -70,7 +72,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" ref={ref} className={`relative h-screen ${bgColor} `}>
+    <section id="home" ref={ref} className={`relative h-screen ${bgColor}`}>
       <SectionIndicator ref={indicatorRef} />
       <a
         href={myCV}
@@ -106,7 +108,7 @@ export default function Hero() {
         </motion.div>
       )}
       {/* RENDER SPLINE 3D ANIMATION ABOVE 1024 SCREEN SIZE */}
-      {snap.screenSize >= 3 ? (
+      {snap.screenSize > 3 ? (
         <div className="absolute inset-0 z-10">
           {loadSpline(splineURL, handleOnLoad, handleMouseUp)}
         </div>

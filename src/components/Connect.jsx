@@ -40,7 +40,7 @@ export default function Connect() {
         </div>
 
         {/* RENDER DIFFERENT SPLINE FOR DIFFERENT SCREEN SIZES */}
-        {snap.screenSize < 3 ? (
+        {snap.screenSize <= 3 ? (
           <div className="absolute inset-0 pointer-events-none">
             {loadSpline(
               "https://prod.spline.design/9lx6NtTJhsPjP7e1/scene.splinecode"

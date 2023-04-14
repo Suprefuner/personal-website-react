@@ -9,8 +9,11 @@ const Navbar = forwardRef((_, ref) => {
 
   return (
     <nav className="fixed left-0 right-0 z-50 md:-top-10 lg:top-0" ref={ref}>
-      {snap.screenSize <= 1 ? <CloudMenu /> : <Cloud />}
-      <div className="container absolute top-2 md:top-[11.5rem] lg:top-1 left-0 right-0 flex items-center justify-between ">
+      {snap.screenSize < 1 ? <CloudMenu /> : <Cloud />}
+      <div
+        className=" container flex items-center justify-between
+        absolute top-2 md:top-[10.5rem] lg:top-1 left-0 right-0 "
+      >
         <div>
           <a href="#home">
             <img src={logo} alt="logo" className="w-5" />

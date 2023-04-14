@@ -37,7 +37,7 @@ export default function Work() {
       <div className="container relative grid items-center h-full ">
         <SectionIndicator ref={indicatorRef} />
         <div className="w-full mt-10 md:mt-8">
-          {snap.screenSize < 3 ? (
+          {snap.screenSize <= 3 ? (
             <WorkListMobile
               works={works}
               selectedWork={selectedWork}
@@ -64,14 +64,14 @@ export default function Work() {
           )}
         </div>
 
-        {snap.screenSize >= 3 && selectedWork.name && (
+        {snap.screenSize > 3 && selectedWork.name && (
           <WorkDetailCard
             selectedWork={selectedWork}
             parentVariants={parentVariants}
           />
         )}
       </div>
-      {snap.screenSize < 3 ? null : (
+      {snap.screenSize <= 3 ? null : (
         <div className="absolute top-0 right-0 z-20 w-screen  h-[105%] pointer-events-none -bottom-1/4 ">
           {loadSpline(splineURL)}
         </div>
