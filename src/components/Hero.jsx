@@ -65,8 +65,9 @@ export default function Hero() {
   const handleMouseUp = (e) => {
     if (e.target.name !== "resume") {
       window.scrollTo(0, window.innerHeight * sectionData[e.target.name].id)
+    } else {
+      linkRef.current.click()
     }
-    linkRef.current.click()
   }
 
   return (
