@@ -7,6 +7,7 @@ import loadSpline from "../utils/spline"
 import { sectionData, heroSectionHeaderStartingPositions } from "../utils/data"
 import state from "../store"
 import { SectionIndicator, HeroSceneMobile } from "./index"
+import myCV from "../assets/Joe_Chan-frontend_developer_CV.pdf"
 
 export default function Hero() {
   const [isLoaded, setIsLoaded] = useState(true)
@@ -17,6 +18,7 @@ export default function Hero() {
   const workRef = useRef()
   const connectRef = useRef()
   const resumeRef = useRef()
+  const linkRef = useRef()
 
   const { ref, inView } = useInView({
     threshold: 0.5,
@@ -64,12 +66,18 @@ export default function Hero() {
     if (e.target.name !== "resume") {
       window.scrollTo(0, window.innerHeight * sectionData[e.target.name].id)
     }
+    linkRef.current.click()
   }
 
   return (
     <section id="home" ref={ref} className={`relative h-screen ${bgColor} `}>
       <SectionIndicator ref={indicatorRef} />
-
+      <a
+        href={myCV}
+        download="Joe_Chan-frontend_developer_CV.pdf"
+        ref={linkRef}
+        className="absolute opacity-0 pointer-events-none"
+      />
       {/* RENDER THE HEADER AFTER SPLINE IS LOADED */}
       {isLoaded && (
         <motion.div
