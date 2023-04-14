@@ -14,8 +14,6 @@ export default function Hero() {
   const snap = useSnapshot(state)
   const { bgColor, splineURL } = sectionData.hero
 
-  console.log(snap.screenSize)
-
   const aboutRef = useRef()
   const workRef = useRef()
   const connectRef = useRef()
