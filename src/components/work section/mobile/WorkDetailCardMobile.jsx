@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion"
-import { stacksLogo } from "../utils/data"
+import { stacksLogo } from "../../../utils/data"
 import { IoMdArrowRoundBack } from "react-icons/io"
-import { WorkSwiperMobile, LinkButtonMobile } from "./index"
+import { WorkSwiperMobile, LinkButtonMobile } from "../../index"
 
 const itemVariants = {
   open: {

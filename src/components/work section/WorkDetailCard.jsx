@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion"
-import { stacksLogo } from "../utils/data"
+import { stacksLogo } from "../../utils/data"
 import useMeasure from "react-use-measure"
 
 const itemVariants = {

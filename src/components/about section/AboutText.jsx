@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { useSnapshot } from "valtio"
-import state from "../store"
+import state from "../../store"
 
 const AboutText = () => {
   const snap = useSnapshot(state)

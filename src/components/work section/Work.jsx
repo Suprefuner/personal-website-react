@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { parentVariants } from "../utils/motion"
+import { parentVariants } from "../../utils/motion"
 
 import {
   WorksList,
   WorkDetailCard,
   WorkListMobile,
   SectionIndicator,
-} from "./index"
-import loadSpline from "../utils/spline"
-import { sectionData, works } from "../utils/data"
+} from "../index"
+import loadSpline from "../../utils/spline"
+import { sectionData, works } from "../../utils/data"
 import { useSnapshot } from "valtio"
-import state from "../store"
+import state from "../../store"
 
 export default function Work() {
   const [selectedWork, setSelectedWork] = useState({})

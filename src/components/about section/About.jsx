@@ -1,12 +1,12 @@
-import { useEffect, useState, Suspense } from "react"
+import { useEffect, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { useSnapshot } from "valtio"
 
-import { SectionIndicator, StacksMenu, AboutText } from "./index"
-import loadSpline from "../utils/spline"
-import { sectionData } from "../utils/data"
-import state from "../store"
+import { SectionIndicator, StacksMenu, AboutText } from "../index"
+import loadSpline from "../../utils/spline"
+import { sectionData } from "../../utils/data"
+import state from "../../store"
 
 export default function About() {
   const [showStackMenu, setShowStackMenu] = useState(false)

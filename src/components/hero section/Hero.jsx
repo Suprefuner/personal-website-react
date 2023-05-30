@@ -3,11 +3,14 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { useSnapshot } from "valtio"
 
-import loadSpline from "../utils/spline"
-import { sectionData, heroSectionHeaderStartingPositions } from "../utils/data"
-import state from "../store"
-import { SectionIndicator, HeroSceneMobile } from "./index"
-import myCV from "../assets/Joe_Chan-frontend_developer_CV.pdf"
+import loadSpline from "../../utils/spline"
+import {
+  sectionData,
+  heroSectionHeaderStartingPositions,
+} from "../../utils/data"
+import state from "../../store"
+import { SectionIndicator, HeroSceneMobile } from "../index"
+import myCV from "../../assets/Joe_Chan-frontend_developer_CV.pdf"
 
 export default function Hero() {
   const [isLoaded, setIsLoaded] = useState(true)

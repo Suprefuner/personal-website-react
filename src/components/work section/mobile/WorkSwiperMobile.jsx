@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { IoMdArrowRoundBack, IoMdArrowRoundForward } from "react-icons/io"
-import { Spinner } from "./index"
+import { Spinner } from "../../index"
 
 const variants = {
   enter: (direction) => {

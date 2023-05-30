@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import WorkItem from "./WorkItem"
-import { parentVariants } from "../utils/motion"
+import { parentVariants } from "../../utils/motion"
 
 export default function WorksList({ works, selectedWork, setSelectedWork }) {
   return (

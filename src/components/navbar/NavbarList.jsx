@@ -1,8 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion"
-import { navList } from "../utils/data"
+import { navList } from "../../utils/data"
 import { useSnapshot } from "valtio"
-import state from "../store"
-import myCV from "../assets/Joe_Chan-frontend_developer_CV.pdf"
+import state from "../../store"
+import myCV from "../../assets/Joe_Chan-frontend_developer_CV.pdf"
 
 export default function NavbarList({ showMenu, setShowMenu }) {
   const snap = useSnapshot(state)

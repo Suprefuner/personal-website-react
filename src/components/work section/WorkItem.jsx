@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import LinkButton from "./LinkButton"
-import customKeyboardEvent from "../utils/customKeyboardEvent"
+import customKeyboardEvent from "../../utils/customKeyboardEvent"
 
 const childVariants = {
   open: {

@@ -1,8 +1,9 @@
 import { forwardRef } from "react"
-import { Cloud, CloudMenu, NavbarList } from "./index"
-import logo from "../assets/images/jc-icon.svg"
+import { Cloud, CloudMenu, NavbarList } from "../index"
 import { useSnapshot } from "valtio"
-import state from "../store"
+
+import state from "../../store"
+import logo from "../../assets/images/jc-icon.svg"
 
 const Navbar = forwardRef((_, ref) => {
   const snap = useSnapshot(state)

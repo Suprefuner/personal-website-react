@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { stacksLogo } from "../utils/data"
+import { stacksLogo } from "../../utils/data"
 
 const StacksMenu = () => {
   return (

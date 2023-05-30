@@ -2,11 +2,11 @@ import { useEffect } from "react"
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 
-import { SectionIndicator, Form } from "./index"
-import loadSpline from "../utils/spline"
-import { sectionData } from "../utils/data"
+import { SectionIndicator, Form } from "../index"
+import loadSpline from "../../utils/spline"
+import { sectionData } from "../../utils/data"
 import { useSnapshot } from "valtio"
-import state from "../store"
+import state from "../../store"
 
 export default function Connect() {
   const { bgColor, splineURL } = sectionData.connect

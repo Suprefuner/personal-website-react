@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Cloud, NavbarList } from "./index"
+import { Cloud, NavbarList } from "../index"
 
 export default function CloudMenu() {
   const [showMenu, setShowMenu] = useState(false)
@@ -10,7 +10,7 @@ export default function CloudMenu() {
       <motion.div
         animate={{ height: showMenu ? "auto" : "0" }}
         transition={{ duration: 1, type: "spring" }}
-        className={` bg-white/95 overflow-hidden`}
+        className="bg-white/95 overflow-hidden"
       >
         <NavbarList showMenu={showMenu} setShowMenu={setShowMenu} />
       </motion.div>

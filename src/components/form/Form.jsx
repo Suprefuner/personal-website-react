@@ -2,8 +2,8 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { toast } from "react-toastify"
 import emailjs from "@emailjs/browser"
-import { FormRow, Spinner } from "./index"
-import customKeyboardEvent from "../utils/customKeyboardEvent"
+import { FormRow, Spinner } from "../index"
+import customKeyboardEvent from "../../utils/customKeyboardEvent"
 
 export default function Form() {
   const [isSendingEmail, setIsSendingEmail] = useState(false)

@@ -1,10 +1,10 @@
 import { motion } from "framer-motion"
 import { useSnapshot } from "valtio"
-import state from "../store"
+import state from "../../store"
 
-import avatarImg from "../assets/images/mobile-hero-section-3d-avatar.png"
-import cloud1 from "../assets/images/cloud-1.png"
-import cloud2 from "../assets/images/cloud-2.png"
+import avatarImg from "../../assets/images/mobile-hero-section-3d-avatar.png"
+import cloud1 from "../../assets/images/cloud-1.png"
+import cloud2 from "../../assets/images/cloud-2.png"
 
 const HeroSceneMobile = ({ cloudLeft, cloudRight }) => {
   const snap = useSnapshot(state)

@@ -1,27 +1,28 @@
-import Hero from "./Hero"
-import About from "./About"
-import Work from "./Work"
-import Connect from "./Connect"
+import Hero from "./hero section/Hero"
+import About from "./about section/About"
+import Work from "./work section/Work"
+import Connect from "./connect/Connect"
 import Footer from "./Footer"
-import Navbar from "./Navbar"
-import NavbarList from "./NavbarList"
-import Cloud from "./Cloud"
-import CloudMenu from "./CloudMenu"
-import FormRow from "./FormRow"
-import Form from "./Form"
+import Navbar from "./navbar/Navbar"
+import NavbarList from "./navbar/NavbarList"
+import Cloud from "./navbar/Cloud"
+import CloudMenu from "./navbar/CloudMenu"
+import TestCloud from "./navbar/TestCloud"
+import FormRow from "./form/FormRow"
+import Form from "./form/Form"
 import Spinner from "./Spinner"
-import LinkButton from "./LinkButton"
-import LinkButtonMobile from "./LinkButtonMobile"
-import WorkDetailCard from "./WorkDetailCard"
-import WorkDetailCardMobile from "./WorkDetailCardMobile"
-import WorkItem from "./WorkItem"
-import WorksList from "./WorksList"
-import WorkListMobile from "./WorkListMobile"
-import WorkSwiperMobile from "./WorkSwiperMobile"
+import LinkButton from "./work section/LinkButton"
+import LinkButtonMobile from "./work section/mobile/LinkButtonMobile"
+import WorkDetailCard from "./work section/WorkDetailCard"
+import WorkDetailCardMobile from "./work section/mobile/WorkDetailCardMobile"
+import WorkItem from "./work section/WorkItem"
+import WorksList from "./work section/WorksList"
+import WorkListMobile from "./work section/mobile/WorkListMobile"
+import WorkSwiperMobile from "./work section/mobile/WorkSwiperMobile"
 import SectionIndicator from "./SectionIndicator"
-import HeroSceneMobile from "./HeroSceneMobile"
-import StacksMenu from "./StacksMenu"
-import AboutText from "./AboutText"
+import HeroSceneMobile from "./hero section/HeroSceneMobile"
+import StacksMenu from "./about section/StacksMenu"
+import AboutText from "./about section/AboutText"
 
 export {
   Hero,
@@ -33,6 +34,7 @@ export {
   NavbarList,
   Cloud,
   CloudMenu,
+  TestCloud,
   FormRow,
   Form,
   Spinner,
