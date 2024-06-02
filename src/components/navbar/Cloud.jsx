@@ -2,6 +2,7 @@ export default function Cloud() {
 	return (
 		<svg
 			className="
+			pointer-events-none
 			fill-white/95 drop-shadow-sm
 				w-[350%] sm:w-[250%] lg:w-[150%] xl:w-full h-full 
 

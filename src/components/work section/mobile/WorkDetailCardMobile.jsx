@@ -35,14 +35,14 @@ const WorkDetailCardMobile = (
     <motion.div
       animate={{ x: showDetail ? "-100%" : 0 }}
       transition={{ type: "tween", delay: 0.3 }}
-      className="w-full h-full bg-white"
+      className="w-full h-full bg-white box-border absolute top-0 left-full"
     >
       <div className="p-2">
         <AnimatePresence mode="wait">
           <motion.div className="space-y-2">
             <div className="flex items-center justify-between">
               <motion.div
-                className="relative z-30 text-3xl w-min"
+                className="relative z-30 text-3xl w-full"
                 whileTap={{ scale: 0.9 }}
                 onClick={() => {
                   setShowDetail(false)

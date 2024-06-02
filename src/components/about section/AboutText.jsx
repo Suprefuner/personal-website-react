@@ -19,11 +19,8 @@ const AboutText = () => {
         className="
               text-header font-extrabold 
               text-center lg:text-left 
-              text-7xl 
-              sm:text-9xl 
-              lg:text-[8rem] 
-              xl:text-[10rem] 
-              2xl:text-[12rem]"
+              text-6xl sm:text-9xl lg:text-[8rem] 
+              xl:text-[10rem] 2xl:text-[12rem]"
       >
         Who am I?
       </motion.h2>
@@ -35,9 +32,8 @@ const AboutText = () => {
         className="
               w-[calc(100vw-12rem)] sm:w-[80%] md:w-[65%] lg:w-full
               relative mx-auto xl:pl-5 
-              text-xl font-semibold 
-              lg:text-2xl 
-              2xl:text-2xl"
+              text-[20px] font-semibold text-center lg:text-left 
+              lg:text-2xl 2xl:text-2xl"
       >
         Hello! I'm Joe🧙🏻‍♂️. <br />
         I'm a frontend web developer based in HK <br />

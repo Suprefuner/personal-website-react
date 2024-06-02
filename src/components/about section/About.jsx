@@ -25,7 +25,7 @@ export default function About() {
     <section id="about" className={`lg:h-full ${bgColor}`}>
       <motion.div
         className="
-          container relative h-screen pt-[15rem] lg:pt-0
+          container relative h-screen pt-[12rem] lg:pt-0
           flex flex-col gap-3 items-center 
           lg:grid-cols-2 lg:grid lg:items-center"
       >
@@ -43,7 +43,7 @@ export default function About() {
           >
             <motion.div className="w-full h-full mx-auto rounded-full pointer-events-none">
               {loadSpline(
-                "https://draft.spline.design/VAHCpmCmVKzbBFmg/scene.splinecode"
+                "https://prod.spline.design/kNrqnlWvQGMia1na/scene.splinecode"
               )}
             </motion.div>
           </div>

@@ -12,7 +12,7 @@ import state from "../../store"
 import { SectionIndicator, HeroSceneMobile } from "../index"
 import myCV from "../../assets/Joe_Chan-frontend_developer_CV.pdf"
 
-export default function Hero() {
+export default function Hero({isLoading, setIsLoading}) {
   const [isLoaded, setIsLoaded] = useState(true)
   const snap = useSnapshot(state)
   const { bgColor, splineURL } = sectionData.hero
@@ -55,12 +55,9 @@ export default function Hero() {
     connectRef.current = connect
     resumeRef.current = resume
 
-    // FIXME
-    // spline.setZoom(0.5)
-
     // GIVE SOME BUFFER TIME FOR FRAMER MOTION
     setTimeout(() => {
-      setIsLoaded(true)
+      setIsLoading(false)
     }, 1000)
   }
 
@@ -83,7 +80,7 @@ export default function Hero() {
         className="absolute opacity-0 pointer-events-none"
       />
       {/* RENDER THE HEADER AFTER SPLINE IS LOADED */}
-      {isLoaded && (
+      {!!!isLoading && (
         <motion.div
           initial={{ opacity: 0, y: -150 }}
           animate={{

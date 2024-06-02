@@ -51,7 +51,7 @@ export const navList = ["about", "work", "connect", "CV"]
 export const sectionData = {
   hero: {
     id: 0,
-    splineURL: "https://prod.spline.design/v1AiIr-dMvqKgT2t/scene.splinecode",
+    splineURL: "https://prod.spline.design/hWEwHQy7N6FAbzg3/scene.splinecode",
     bgColor: "heroBG",
   },
   about: {

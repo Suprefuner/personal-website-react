@@ -10,8 +10,8 @@ const WorkListMobile = ({
 }) => {
   const [showDetail, setShowDetail] = useState(false)
   return (
-    <motion.div className="bg-black p-2 rounded-3xl h-[75vh] ">
-      <div className="h-full overflow-hidden bg-white flex [&>*]:shrink-0 rounded-xl ">
+    <motion.div className="bg-black p-2 rounded-3xl h-[75vh] w-full">
+      <div className="w-full h-full overflow-x-hidden relative bg-white rounded-xl ">
         <motion.div className="w-full h-full">
           <h2 className="font-extrabold leading-[9rem] text-4xl text-center text-[#f84874] border-b shadow-md bg-gray-100">
             Recent Works
@@ -20,7 +20,8 @@ const WorkListMobile = ({
             variants={parentVariants}
             initial="closed"
             whileInView="open"
-            viewport={{ margin: "-400px", once: true }}
+            viewport={{ margin: "-100px", once: true }}
+            className=""
           >
             {works.map((work, i) => (
               <motion.li
