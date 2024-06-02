@@ -25,8 +25,8 @@ export default function Connect() {
         <Form />
         <div className="h-full -order-1 lg:order-1 lg:flex-1">
           <motion.h2
-            initial={{ opacity: 0, x: 250 }}
-            whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 250 }}
+              whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: "tween", duration: 0.75 }}
             viewport={
               snap.screenSize < 3
