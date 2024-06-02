@@ -43,7 +43,7 @@ export default function About() {
           >
             <motion.div className="w-full h-full mx-auto rounded-full pointer-events-none">
               {loadSpline(
-                "https://prod.spline.design/v1AiIr-dMvqKgT2t/scene.splinecode"
+                "https://prod.spline.design/eJuD4AKX3ZkUCk4h/scene.splinecode"
               )}
             </motion.div>
           </div>

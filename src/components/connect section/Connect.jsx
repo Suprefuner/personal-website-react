@@ -43,7 +43,7 @@ export default function Connect() {
         {snap.screenSize <= 3 ? (
           <div className="absolute inset-0 pointer-events-none">
             {loadSpline(
-              "https://prod.spline.design/v1AiIr-dMvqKgT2t/scene.splinecode"
+              "https://prod.spline.design/9lx6NtTJhsPjP7e1/scene.splinecode"
             )}
           </div>
         ) : (
